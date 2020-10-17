@@ -148,12 +148,12 @@ let lenCards = cards.length;
 let flipedCards = [];
 let lastCard = 0;
 
-let remainTime = 10;
+let remainTime = 30;
 
 let resetData = ()=>{
 	flipedCards = []
 	lastCard = 0
-	remainTime = 10
+	remainTime = 30
 }
 
 //////////////////////////////////////////////////
@@ -369,7 +369,6 @@ flipCard();
 
 
 // random cards
-
 function sortRandomCards() {
   cards.sort(function(a, b){return 0.5 - Math.random()})
 }
@@ -402,7 +401,6 @@ let sendFunc = (event)=>{
 	})
 	inputName.value = ''	
 }
-
 let sendReq = document.getElementById('sendReq')
 sendReq.addEventListener('click', sendFunc)
 
